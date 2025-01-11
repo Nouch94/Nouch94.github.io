@@ -885,3 +885,35 @@ button,
       left: auto;
       margin: 1em 0 0 0;
       position: relative; } }
+      #projects {
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        text-align: center;
+    }
+    
+    #projects h2 {
+        font-size: 2em;
+        color: #333;
+    }
+    
+    #projects ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    #projects li {
+        margin: 15px 0;
+        font-size: 1.2em;
+    }
+    
+    #projects a {
+        color: #007acc;
+        text-decoration: none;
+    }
+    
+    #projects a:hover {
+        text-decoration: underline;
+    }
+    
