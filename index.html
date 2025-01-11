@@ -72,3 +72,20 @@
     </footer>
 </body>
 </html>
+<div id="bg">
+	<div style="background-image: url('path-to-image-1.jpg');"></div>
+	<div style="background-image: url('path-to-image-2.jpg');"></div>
+  </div>
+  <script>
+	// Add click animation to sections
+	document.querySelectorAll('section').forEach((section) => {
+	  section.addEventListener('click', () => {
+		section.style.transition = 'transform 0.3s ease';
+		section.style.transform = 'scale(1.1)';
+		setTimeout(() => {
+		  section.style.transform = 'scale(1)';
+		}, 300);
+	  });
+	});
+  </script>
+  
