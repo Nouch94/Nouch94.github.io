@@ -11,44 +11,17 @@ header {
     background-color: #007acc;
     color: white;
 }
-
-#projects ul {
-    list-style: none;
-    padding: 0;
-}
-
-#projects li {
-    margin: 20px 0;
-}
-
-a {
-    color: #007acc;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
 #projects {
     margin: 20px auto;
     padding: 20px;
+    text-align: center;
     background-color: #f8f9fa;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-#projects ul {
-    list-style: none;
-    padding: 0;
-}
-
-#projects li {
-    margin: 15px 0;
 }
 
 #projects a {
-    font-size: 1.2em;
     color: #007acc;
+    font-size: 1.2em;
     text-decoration: none;
 }
 
@@ -56,8 +29,3 @@ a:hover {
     text-decoration: underline;
 }
 
-#projects p {
-    margin: 5px 0 0;
-    font-size: 0.9em;
-    color: #555;
-}
