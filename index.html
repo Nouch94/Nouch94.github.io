@@ -7,16 +7,31 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Menu -->
+    <div id="menu">
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <ul id="menu-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="certificates.html">Certificates</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Connect with Me</a></li>
+        </ul>
+    </div>
+
     <!-- Header Section -->
     <header id="header">
         <h1>Welcome!</h1>
-
     </header>
 
     <!-- About Me Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>I am a data scientist with experience in machine learning, data visualization, and analytics. I am passionate about solving problems using data-driven approaches. My strong suits are team work, communication and project managments. My portfolio is a demonstration of my extensive work as a data scientist.</p>
+        <p>I am a data scientist with experience in machine learning, data visualization, and analytics. I am passionate about solving problems using data-driven approaches. My strong suits are teamwork, communication, and project management. My portfolio is a demonstration of my extensive work as a data scientist.</p>
     </section>
 
     <!-- Skills Section -->
@@ -36,11 +51,11 @@
         <h2>Certificates</h2>
         <ul>
             <li>
-                <a href="coding for data certificate.pdf" target="_blank">Certificate Name 1</a>
+                <a href="assets/images/coding-for-data-certificate.pdf" target="_blank">Certificate Name 1</a>
                 <p>Brief description of the certificate.</p>
             </li>
             <li>
-                <a href="citiCompletionCertificate_13061652_66712386.pdf" target="_blank">Certificate Name 2</a>
+                <a href="assets/images/citiCompletionCertificate_13061652_66712386.pdf" target="_blank">Certificate Name 2</a>
                 <p>Brief description of the certificate.</p>
             </li>
         </ul>
@@ -70,70 +85,41 @@
             <li><a href="https://github.com/Nouch94" target="_blank">GitHub</a></li>
         </ul>
     </footer>
+
+    <!-- Particle.js -->
+    <script src="assets/js/particles.min.js"></script>
+    <script>
+      particlesJS('particles-js', {
+        particles: {
+          number: { value: 80, density: { enable: true, value_area: 800 } },
+          color: { value: "#ffffff" },
+          shape: { type: "circle" },
+          opacity: { value: 0.5 },
+          size: { value: 3, random: true },
+          line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 },
+          move: { enable: true, speed: 6 }
+        },
+        interactivity: {
+          events: {
+            onhover: { enable: true, mode: "grab" },
+            onclick: { enable: true, mode: "push" }
+          },
+          modes: { grab: { distance: 140 }, push: { particles_nb: 4 } }
+        },
+        retina_detect: true
+      });
+    </script>
+
+    <!-- JavaScript for Menu -->
+    <script>
+        function toggleMenu() {
+            const menuItems = document.getElementById('menu-items');
+            if (menuItems.style.display === 'block') {
+                menuItems.style.display = 'none';
+            } else {
+                menuItems.style.display = 'block';
+            }
+        }
+    </script>
 </body>
-
-<div id="particles-js"></div>
-
 </html>
-<div id="bg">
-	<div style="background-image: url('path-to-image-1.jpg');"></div>
-	<div style="background-image: url('path-to-image-2.jpg');"></div>
-  </div>
-  <script>
-	// Add click animation to sections
-	document.querySelectorAll('section').forEach((section) => {
-	  section.addEventListener('click', () => {
-		section.style.transition = 'transform 0.3s ease';
-		section.style.transform = 'scale(1.1)';
-		setTimeout(() => {
-		  section.style.transform = 'scale(1)';
-		}, 300);
-	  });
-	});
-  </script>
-<script src="assets/js/particles.min.js"></script>
-<script>
-  particlesJS('particles-js', {
-    particles: {
-      number: { value: 80, density: { enable: true, value_area: 800 } },
-      color: { value: "#ffffff" },
-      shape: { type: "circle" },
-      opacity: { value: 0.5 },
-      size: { value: 3, random: true },
-      line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 },
-      move: { enable: true, speed: 6 }
-    },
-    interactivity: {
-      events: {
-        onhover: { enable: true, mode: "grab" },
-        onclick: { enable: true, mode: "push" }
-      },
-      modes: { grab: { distance: 140 }, push: { particles_nb: 4 } }
-    },
-    retina_detect: true
-  });
-</script>
-</body> 
-
-<div id="menu">
-	<div class="hamburger" onclick="toggleMenu()">☰</div>
-	<ul id="menu-items">
-	  <li><a href="index.html">Home</a></li>
-	  <li><a href="about.html">About Me</a></li>
-	  <li><a href="skills.html">Skills</a></li>
-	  <li><a href="certificates.html">Certificates</a></li>
-	  <li><a href="projects.html">Projects</a></li>
-	  <li><a href="contact.html">Connect with Me</a></li>
-	</ul>
-  </div>
-  <script>
-	function toggleMenu() {
-	  const menuItems = document.getElementById('menu-items');
-	  if (menuItems.style.display === 'block') {
-		menuItems.style.display = 'none';
-	  } else {
-		menuItems.style.display = 'block';
-	  }
-	}
-  </script>
-
