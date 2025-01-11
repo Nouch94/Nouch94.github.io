@@ -275,3 +275,6 @@ body > * {
 #menu-items li a:hover {
   background-color: #007acc;
 }
+html {
+  scroll-behavior: smooth;
+}
