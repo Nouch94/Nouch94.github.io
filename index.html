@@ -7,32 +7,55 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
+        <!-- Anchor for Home -->
+    <div id="top"></div>
     <!-- Particle Background -->
     <div id="particles-js"></div>
 
     <!-- Menu -->
-    <div id="menu">
+ <div id="menu">
         <div class="hamburger" onclick="toggleMenu()">☰</div>
         <ul id="menu-items">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
             <li><a href="skills.html">Skills</a></li>
             <li><a href="certificates.html">Certificates</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Connect with Me</a></li>
+            <li><a href="#footer">Connect with Me</a></li>
         </ul>
     </div>
 
     <!-- Header Section -->
-    <header id="header">
+      <header id="header">
         <h1>Welcome!</h1>
+        <p style="text-align:center;">
+            I'm <strong>Vanessa Nkongolo</strong> — a Data Science graduate student
+            passionate about analytics, forecasting, and airline operations.
+        </p>
     </header>
 
     <!-- About Me Section -->
-    <section id="about">
+      <section id="about">
         <h2>About Me</h2>
-        <p>I am a data scientist with experience in machine learning, data visualization, and analytics. I am passionate about solving problems using data-driven approaches. My strong suits are teamwork, communication, and project management. My portfolio is a demonstration of my extensive work as a data scientist.</p>
+        <p>
+            I’m a data science master’s student and analytics professional with experience
+            in machine learning, time series forecasting, and data visualization.
+        </p>
+        <p>
+            I enjoy solving real-world problems using data-driven approaches and turning
+            complex analysis into insights that business teams can act on. My interests
+            include airline operations, customer experience, and predictive modeling.
+        </p>
     </section>
+   <!-- Footer / Connect -->
+    <footer id="footer">
+        <p>Connect with me:</p>
+        <ul>
+            <li><a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a></li>
+            <li><a href="mailto:your-email@example.com">Email</a></li>
+            <li><a href="https://github.com/Nouch94" target="_blank">GitHub</a></li>
+        </ul>
+    </footer>
+    
 
     <!-- Skills Section -->
     <section id="skills">
@@ -85,7 +108,6 @@
             <li><a href="https://github.com/Nouch94" target="_blank">GitHub</a></li>
         </ul>
     </footer>
-
     <!-- Particle.js -->
     <script src="assets/js/particles.min.js"></script>
     <script>
@@ -99,27 +121,18 @@
           line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 },
           move: { enable: true, speed: 6 }
         },
-        interactivity: {
-          events: {
-            onhover: { enable: true, mode: "grab" },
-            onclick: { enable: true, mode: "push" }
-          },
-          modes: { grab: { distance: 140 }, push: { particles_nb: 4 } }
-        },
         retina_detect: true
       });
     </script>
 
-    <!-- JavaScript for Menu -->
+    <!-- Menu Toggle -->
     <script>
         function toggleMenu() {
             const menuItems = document.getElementById('menu-items');
-            if (menuItems.style.display === 'block') {
-                menuItems.style.display = 'none';
-            } else {
-                menuItems.style.display = 'block';
-            }
+            menuItems.style.display =
+                menuItems.style.display === 'block' ? 'none' : 'block';
         }
     </script>
 </body>
-</html>
+    
+
